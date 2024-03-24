@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/// Clasele pentru adăpostul de animale
+/// Clasele
 
 class Adresa {
 private:
@@ -83,7 +83,7 @@ public:
     Adapost() : numeAdapost(""), adresa(Adresa()), animale(vector<Animal>()), angajati(vector<Angajat>()) {}
     Adapost(string numeAdapost, Adresa adresa, vector<Animal> animale, vector<Angajat> angajati)
         : numeAdapost(numeAdapost), adresa(adresa), animale(animale), angajati(angajati) {}
-
+    // Calculam salariul mediu al angajatilor la adapost
     double salariuMediuAngajati() const {
         if (angajati.empty()) return 0.0;
         double totalSalarii = 0.0;
@@ -126,21 +126,21 @@ public:
 
 int main() {
     // Initializare Adresa
-    Adresa adresa("Strada Principala", "Orasul Mic", "12345");
+    Adresa adresa("Strada A", "Bucuresti", "12345");
 
     // Initializare vector de animale
     vector<Animal> animale;
     animale.push_back(Animal("Max", "Caine"));
-    animale.push_back(Animal("Mittens", "Catel"));
+    animale.push_back(Animal("Mittens", "Caine"));
 
     // Initializare vector de angajati
     vector<Angajat> angajati;
-    angajati.push_back(Angajat("John Doe", 2000.0));
+    angajati.push_back(Angajat("Mirel", 2000.0));
 
     // Initializare adapost
-    Adapost adapost("Adapostul Meu", adresa, animale, angajati);
+    Adapost adapost("Adapostul meu", adresa, animale, angajati);
 
-    // Afisare informatii despre adapost
+    // Afisare informatii
     cout << adapost;
 
     return 0;
