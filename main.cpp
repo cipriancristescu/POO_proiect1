@@ -131,7 +131,7 @@ int main() {
     // Initializare vector de animale
     vector<Animal> animale;
     animale.push_back(Animal("Max", "Caine"));
-    animale.push_back(Animal("Mittens", "Caine"));
+    animale.push_back(Animal("Ursu", "Caine"));
 
     // Initializare vector de angajati
     vector<Angajat> angajati;
